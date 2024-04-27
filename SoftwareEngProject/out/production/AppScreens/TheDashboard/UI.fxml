@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainContainer" prefHeight="600.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TheDashboard.Controller">
+   <children>
+      <ImageView fitHeight="91.0" fitWidth="92.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/asu-eng%20logo.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="154.0" layoutY="14.0" prefHeight="91.0" prefWidth="605.0" spacing="150.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" stylesheets="@style.css" text="Home" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@style.css" text="Fields" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@style.css" text="Events" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="143.0" layoutY="144.0" prefHeight="100.0" prefWidth="605.0" style="-fx-background-color: #588157;" />
+      <HBox layoutX="143.0" layoutY="269.0" prefHeight="100.0" prefWidth="605.0" style="-fx-background-color: #588157;" />
+      <HBox layoutX="143.0" layoutY="397.0" prefHeight="100.0" prefWidth="605.0" style="-fx-background-color: #588157;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+#MainContainer {
+    -fx-background-color: #dad7cd;
+}
+
+.button {
+    -fx-background-color: #a3b18a;
+}
+
+.button:hover {
+    -fx-background-color: transparent;
+    -fx-underline: true;
+}
+

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" styleClass="main_container" stylesheets="@../CSS%20Files/Home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignupController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="239.0" styleClass="side_navbar" stylesheets="@../CSS%20Files/Home.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="96.0" prefWidth="167.0">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/asu-eng%20logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="96.0" prefWidth="179.0" styleClass="logo_label" stylesheets="@../CSS%20Files/Home.css" text="Activities" />
+               </children>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Separator opacity="0.25" prefWidth="200.0" styleClass="side_navbar_separator" stylesheets="@../CSS%20Files/Home.css">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Separator>
+            <VBox prefWidth="250.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="44.0" prefWidth="238.0" styleClass="side_navbar_tab_hover" stylesheets="@../CSS%20Files/Home.css">
+                     <children>
+                        <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                        <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#goToHomeSignedOutScene" prefHeight="45.0" prefWidth="145.0" styleClass="side_navbar_tab_button" stylesheets="@../CSS%20Files/Home.css" text="Home" />
+                        <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Pane prefWidth="238.0" VBox.vgrow="ALWAYS" />
+                  <HBox alignment="CENTER" prefHeight="44.0" prefWidth="238.0" styleClass="side_navbar_tab_selected" stylesheets="@../CSS%20Files/Home.css">
+                     <children>
+                        <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                        <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/user.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#goBack" prefHeight="57.0" prefWidth="131.0" styleClass="side_navbar_tab_button" stylesheets="@../CSS%20Files/Home.css" text="Sign In" />
+                        <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow color="#282828" height="25.0" offsetX="2.0" radius="12.0" width="25.0" />
+                     </effect>
+                  </HBox>
+                  <Pane prefWidth="239.0" VBox.vgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="5.0" top="15.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="94.0" prefWidth="736.0">
+               <children>
+                  <Pane prefHeight="94.0" prefWidth="18.0" />
+                  <Label alignment="CENTER" prefHeight="94.0" prefWidth="208.0" styleClass="tab_title_label" stylesheets="@../CSS%20Files/Home.css" text="Sign Up" />
+               </children>
+            </HBox>
+            <Pane prefWidth="761.0" VBox.vgrow="ALWAYS" />
+            <HBox>
+               <children>
+                  <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                  <VBox prefHeight="200.0" prefWidth="454.0" spacing="20.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="300.0">
+                           <children>
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <Label styleClass="credential_label" stylesheets="@../CSS%20Files/Login.css" text="First Name" />
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="name" promptText="First Name" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+                           <children>
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <Label styleClass="credential_label" stylesheets="@../CSS%20Files/Login.css" text="ID" />
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="id" promptText="Student ID" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="300.0">
+                           <children>
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <Label styleClass="credential_label" stylesheets="@../CSS%20Files/Login.css" text="Confirm ID" />
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="confirmID" promptText="Confirm Student ID" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+                           <children>
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <Label styleClass="credential_label" stylesheets="@../CSS%20Files/Login.css" text="Password" />
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <PasswordField fx:id="password" promptText="Password" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="77.0" prefHeight="100.0" prefWidth="300.0">
+                           <children>
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <Label styleClass="credential_label" stylesheets="@../CSS%20Files/Login.css" text="Confirm Password" />
+                              <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                              <PasswordField fx:id="confirmPassword" promptText="Confirm Password" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#registerUser" prefHeight="40.0" prefWidth="120.0" styleClass="login_button" stylesheets="@../CSS%20Files/Login.css" text="Sign Up" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Pane prefWidth="761.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

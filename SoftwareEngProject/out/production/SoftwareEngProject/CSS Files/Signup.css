@@ -1,0 +1,22 @@
+.credential_label {
+    -fx-font-size: 25px;
+    -fx-font-family: sans-serif;
+    -fx-text-fill: #4bb3fd;
+    -fx-font-weight: bold;
+}
+
+.signup_button {
+    -fx-background-radius: 20px;
+    -fx-font-size: 20px;
+    -fx-text-fill: #fafefe;
+    -fx-background-color: #0496ff;
+    -fx-font-family: sans-serif;
+}
+
+.signup_button:hover {
+    -fx-text-fill: #0496ff;
+    -fx-background-color: #fafefe;
+    -fx-border-color: #0496ff;
+    -fx-border-radius: 20px;
+    -fx-border-width: 2px;
+}

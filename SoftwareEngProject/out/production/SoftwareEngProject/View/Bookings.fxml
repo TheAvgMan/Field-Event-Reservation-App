@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" styleClass="main_container" stylesheets="@../CSS%20Files/Home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BookingsController">
+    <left>
+        <VBox prefHeight="600.0" prefWidth="239.0" styleClass="side_navbar" stylesheets="@../CSS%20Files/Home.css" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="96.0" prefWidth="167.0">
+                    <children>
+                        <ImageView fitHeight="90.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/asu-eng%20logo.png" />
+                            </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="96.0" prefWidth="179.0" styleClass="logo_label" stylesheets="@../CSS%20Files/Home.css" text="Activities" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Separator opacity="0.25" prefWidth="200.0" styleClass="side_navbar_separator" stylesheets="@../CSS%20Files/Home.css">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Separator>
+                <VBox prefWidth="250.0" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="238.0" styleClass="side_navbar_tab_hover" stylesheets="@../CSS%20Files/Home.css">
+                            <children>
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/home.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Button mnemonicParsing="false" onAction="#goToHome" prefHeight="45.0" prefWidth="145.0" styleClass="side_navbar_tab_button" stylesheets="@../CSS%20Files/Home.css" text="Home" />
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </HBox>
+                        <Pane prefWidth="238.0" VBox.vgrow="ALWAYS" />
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="238.0" styleClass="side_navbar_tab_hover" stylesheets="@../CSS%20Files/Home.css">
+                            <children>
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/running.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Button mnemonicParsing="false" onAction="#goToFields" prefHeight="56.0" prefWidth="144.0" styleClass="side_navbar_tab_button" stylesheets="@../CSS%20Files/Home.css" text="Fields" />
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="238.0" styleClass="side_navbar_tab_hover" stylesheets="@../CSS%20Files/Home.css">
+                            <children>
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/party.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Button mnemonicParsing="false" onAction="#goToEvents" prefHeight="50.0" prefWidth="144.0" styleClass="side_navbar_tab_button" stylesheets="@../CSS%20Files/Home.css" text="Events" />
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="238.0" styleClass="side_navbar_tab_selected" stylesheets="@../CSS%20Files/Home.css">
+                            <children>
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/clipboard.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="145.0" styleClass="side_navbar_tab_button" stylesheets="@../CSS%20Files/Home.css" text="Bookings" />
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                     <effect>
+                        <DropShadow color="#282828" height="25.0" offsetX="2.0" radius="12.0" width="25.0" />
+                     </effect>
+                        </HBox>
+                        <Pane prefWidth="239.0" VBox.vgrow="ALWAYS" />
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="238.0" styleClass="side_navbar_tab_hover" stylesheets="@../CSS%20Files/Home.css">
+                            <children>
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/exit.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Button mnemonicParsing="false" onAction="#goToHomeSignedOutScene" prefHeight="57.0" prefWidth="131.0" styleClass="side_navbar_tab_button" stylesheets="@../CSS%20Files/Home.css" text="Sign Out" />
+                                <Pane prefHeight="44.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                    <padding>
+                        <Insets bottom="25.0" left="5.0" top="15.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="94.0" prefWidth="861.0">
+                    <children>
+                        <Pane prefHeight="94.0" prefWidth="18.0" />
+                        <Label alignment="CENTER" prefHeight="94.0" prefWidth="208.0" styleClass="tab_title_label" stylesheets="@../CSS%20Files/Home.css" text="Bookings" />
+                    </children>
+                </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Label text="Field Reservations">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+                <HBox prefHeight="220.0">
+                    <children>
+                        <Pane HBox.hgrow="ALWAYS" />
+                        <ScrollPane prefWidth="750.0" style="-fx-background-color: transparent;">
+                            <content>
+                                <VBox fx:id="fieldsVbox" alignment="CENTER" prefWidth="748.0" spacing="20.0">
+                                    <padding>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </padding></VBox>
+                            </content></ScrollPane>
+                        <Pane HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Label text="Events Reservations">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="220.0">
+               <children>
+                  <Pane HBox.hgrow="ALWAYS" />
+                  <ScrollPane prefWidth="750.0" style="-fx-background-color: transparent;">
+                     <content>
+                        <VBox fx:id="eventsVbox" alignment="CENTER" prefWidth="748.0" spacing="20.0">
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <Pane HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

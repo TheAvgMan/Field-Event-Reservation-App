@@ -1,0 +1,139 @@
+.main_container {
+    -fx-background-color: #fafefe;
+}
+
+.side_navbar {
+    -fx-background-color: #e1e5f2;
+}
+
+.side_navbar_tab_button {
+    -fx-background-color: transparent;
+    -fx-text-fill: Black;
+    -fx-font-size: 15px;
+}
+
+.side_navbar_tab_selected {
+    -fx-background-color: #bfdbf7;
+    -fx-background-radius: 50px 5px 5px 50px;
+}
+
+.side_navbar_tab_hover:hover {
+   -fx-border-color: #0496ff;
+   -fx-border-width: 2px;
+   -fx-border-radius: 50px 5px 5px 50px;
+}
+
+.side_navbar_separator {
+    -fx-background-color: #6c757d;
+}
+
+.logo_label {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.tab_title_label {
+    -fx-font-size: 30px;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: bold;
+    -fx-border-color: #0496ff;
+    -fx-border-radius: 7px 7px 30px 30px;
+    -fx-border-width: 0px 3px 3px 3px;
+    -fx-text-fill: #0496ff;
+}
+
+.welcome_label {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 30px;
+    -fx-font-weight: Bold;
+}
+
+.welcome_label_separator {
+    -fx-background-color: #ced4da;
+}
+
+.points_area {
+    -fx-background-color: #e1e5f2;
+    -fx-background-radius: 30px 7px 7px 30px;
+}
+
+.points_label {
+    -fx-font-size: 25px;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: bold;
+}
+
+.points_number_label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #0077b6;
+    -fx-font-weight: bold;
+}
+
+.points_about_button {
+    -fx-background-radius: 15px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #fafefe;
+    -fx-background-color: #0496ff;
+}
+
+.points_about_button:hover {
+    -fx-background-radius: 15px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0496ff;
+    -fx-background-color: #fafefe;
+    -fx-border-color: #0496ff;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+}
+
+.activity_detail_box {
+    -fx-background-radius: 30px;
+    -fx-border-width: 3px;
+    -fx-border-radius: 30px;
+}
+
+.activity_detail_box_main_label {
+    -fx-font-size: 30px;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: bold;
+}
+
+.activity_detail_box_description_label {
+    -fx-font-size: 21px;
+    -fx-font-family: sans-serif;
+}
+
+.activity_detail_box_description {
+    -fx-font-size: 15px;
+}
+
+.activity_detail_box_button_1, .activity_detail_box_button_2 {
+    -fx-background-radius: 15px;
+    -fx-font-size: 15px;
+}
+
+.activity_detail_box_button_1:hover, .activity_detail_box_button_2:hover {
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+}
+
+.activity_detail_box_button_1 {
+    -fx-background-color: #8eb93f;
+    -fx-text-fill: black;
+}
+
+.activity_detail_box_button_2 {
+    -fx-background-color: #2b1a30;
+    -fx-text-fill: #fafefe;
+}
+
+.activity_detail_box_button_1:hover {
+    -fx-background-color: #c5edac;
+    -fx-border-color: #8eb93f;
+}
+
+.activity_detail_box_button_2:hover {
+    -fx-background-color: #844e94;
+    -fx-border-color: #2b1a30;
+}
